@@ -11,7 +11,7 @@ app.get('/',function(req,res)
 
 app.get('/:location',(req,res,next) => {
     var options = {
-        url: `https://images-api.nasa.gov/search?q=${req.params.location}&units=metric`
+        url: `https://images-api.nasa.gov/search?q=${req.params.location}`
         ,
         headers:{
             'User-Agent':'My web server',
